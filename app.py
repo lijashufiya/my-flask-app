@@ -19,7 +19,7 @@ def health():
 def info(): 
  return jsonify({ 
  'name': 'Flask CI/CD Demo', 
- 'author': 'Your Name', 
+ 'author': 'Liza', 
  'features': ['Auto Build', 'Auto Deploy', 'Docker']  }) 
 if __name__ == "__main__": 
  app.run(host="0.0.0.0", port=5000) 
