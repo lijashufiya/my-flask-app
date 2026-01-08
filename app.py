@@ -8,25 +8,25 @@ def home():
     <h1>Flask App with CI/CD</h1>
     <p>Deployed automatically using GitHub Actions!</p>
     <ul>
-        <li><a href="/health">Health Check</a></li>
-        <li><a href="/api/info">API Info</a></li>
+      <li><a href="/health">Health Check</a></li>
+      <li><a href="/api/info">API Info</a></li>
     </ul>
     """
 
-@app.route('/health')
+@app.route("/health")
 def health():
     return jsonify({
-        'status': 'healthy',
-        'service': 'Flask App',
-        'version': '1.0.0'
+        "status": "healthy",
+        "service": "Flask App",
+        "version": "1.0.0"
     })
 
-@app.route('/api/info')
+@app.route("/api/info")
 def info():
     return jsonify({
-        'name': 'Flask CI/CD Demo',
-        'author': 'Liza cantik',
-        'features': ['Auto Build', 'Auto Deploy', 'Docker']
+        "name": "Flask CI/CD Demo",
+        "author": "Liza cantik",
+        "features": ["Auto Build", "Auto Deploy", "Docker"]
     })
 
 if __name__ == "__main__":
