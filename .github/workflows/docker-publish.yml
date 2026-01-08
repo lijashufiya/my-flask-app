@@ -2,8 +2,9 @@ name: CI/CD Flask Docker with Quality Code Assurance Gate
 
 on:
   pull_request:
-    branches: [main]
-    types: [closed]
+    branches: [ main ]
+  push:
+    branches: [ main ]
 
 env:
   REGISTRY: docker.io
